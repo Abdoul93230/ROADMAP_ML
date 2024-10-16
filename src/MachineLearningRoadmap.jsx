@@ -45,183 +45,218 @@ const RoadmapDescription = () => {
 
 
 
-const roadmapData = [
-  {
-    title: "Introduction à Python pour la Data Science",
-    duration: "1-2 semaines",
-    description: "Maîtriser les bases de Python pour la manipulation de données et l'analyse.",
-    content: [
-      {
-        subtitle: "Concepts de Base de Python",
-        details: [
-          "Variables et types de données",
-          "Structures de contrôle (if, for, while)",
-          "Fonctions et modules",
-          "Structures de données (listes, dictionnaires, tuples)",
-          "Programmation orientée objet"
-        ]
-      },
-      {
-        subtitle: "Exercices Pratiques",
-        details: [
-          "Création d'une application de gestion de tâches",
-          "Manipulation de données avec les structures Python",
-          "Implémentation d'algorithmes simples"
-        ]
-      }
-    ]
-  },
-  {
-    title: "Gestion de Version avec Git et GitHub",
-    duration: "1 semaine",
-    description: "Apprendre à utiliser Git pour le contrôle de version et collaborer sur GitHub.",
-    content: [
-      {
-        subtitle: "Introduction à Git",
-        details: [
-          "Initialisation de dépôts (git init)",
-          "Suivi des modifications (git add, git commit)",
-          "Branches et fusions (git branch, git merge)",
-          "Résolution des conflits"
-        ]
-      },
-      {
-        subtitle: "Collaboration avec GitHub",
-        details: [
-          "Création et gestion de dépôts distants",
-          "Pull requests et revue de code",
-          "Issues et gestion de projet",
-          "Bonnes pratiques de collaboration"
-        ]
-      },
-      {
-        subtitle: "Automatisation avec GitHub Actions",
-        details: [
-          "Configuration de workflows CI/CD",
-          "Automatisation des tests",
-          "Déploiement continu"
-        ]
-      }
-    ]
-  },
-  {
-    title: "Analyse de Données avec Python",
-    duration: "2-3 semaines",
-    description: "Utilisation de bibliothèques scientifiques pour manipuler et visualiser les données.",
-    content: [
-      {
-        subtitle: "Manipulation Numérique avec Numpy",
-        details: [
-          "Création de tableaux",
-          "Opérations mathématiques",
-          "Manipulation de matrices"
-        ]
-      },
-      {
-        subtitle: "Visualisation avec Matplotlib et Seaborn",
-        details: [
-          "Graphiques simples et complexes",
-          "Corrélations et distributions"
-        ]
-      }
-    ]
-  },
-  {
-    title: "Machine Learning avec Scikit-learn",
-    duration: "4-6 semaines",
-    description: "Apprendre les concepts fondamentaux du Machine Learning et implémenter des modèles.",
-    content: [
-      {
-        subtitle: "Prétraitement des Données",
-        details: [
-          "Encodage des variables",
-          "Normalisation/Standardisation",
-          "Imputation des valeurs manquantes"
-        ]
-      },
-      {
-        subtitle: "Apprentissage Supervisé",
-        details: [
-          "Régression linéaire, régression Ridge/Lasso",
-          "KNN, SVM, Arbres de décision, Forêts aléatoires",
-          "Évaluation des modèles"
-        ]
-      },
-      {
-        subtitle: "Apprentissage Non Supervisé",
-        details: [
-          "K-means clustering, Hierarchical clustering, DBSCAN ",
-          "Analyse en Composantes Principales (PCA) , t-SNE ",
-          "segmention des groupes"
-        ]
-      },
-      {
-        subtitle: "Validation Croisée et Tuning des Hyperparamètres",
-        details: [
-          "K-fold cross-validation , GridSearchCV, RandomizedSearchCV  ",
-          "Sauvegarde et Chargement des Modèles , pickle ,joblib ",
-          
-        ]
-      },
-    ]
-  },
-  {
-    title: "Création d'API REST avec Flask",
-    duration: "2-3 semaines",
-    description: "Créer des API REST pour exposer des modèles de Machine Learning.",
-    content: [
-      {
-        subtitle: "Introduction à Flask",
-        details: [
-          "Création de routes, gestion des requêtes GET/POST",
-          "Gestion des erreurs"
-        ]
-      },
-      {
-        subtitle: "Création d'API pour les modèles ML",
-        details: [
-          "Exposer un modèle de machine learning via une API",
-          "Retourner des prédictions à partir des données utilisateurs"
-        ]
-      }
-    ]
-  },
-  {
-    title: "Déploiement sur Render",
-    duration: "1-2 semaines",
-    description: "Apprendre à déployer les modèles et les API sur des serveurs cloud.",
-    content: [
-      {
-        subtitle: "Déploiement avec Gunicorn et Heroku",
-        details: [
-          "Déployer Flask ",
-          "Héberger l'API sur Render"
-        ]
-      },
-      {
-        subtitle: "Utilisation de Docker (Optionnel)",
-        details: [
-          "Conteneuriser l'application pour faciliter le déploiement",
-          "Création de Dockerfile"
-        ]
-      }
-    ]
-  },
-  {
-    title: "Projet Final",
-    duration: "2-4 semaines",
-    description: "Appliquer tout ce qui a été appris pour développer une application complète.",
-    content: [
-      {
-        subtitle: "Développement d'une Application Complète",
-        details: [
-          "Préparation des données, modélisation, API Flask",
-          "Déploiement sur le cloud, création d'une interface utilisateur"
-        ]
-      }
-    ]
-  }
-];
+  const roadmapData = [
+    {
+      title: "Introduction à Python pour la Data Science",
+      duration: "1-2 semaines",
+      description: "Maîtriser les bases de Python pour la manipulation de données et l'analyse.",
+      content: [
+        {
+          subtitle: "Concepts de Base de Python",
+          details: [
+            "Variables et types de données",
+            "Structures de contrôle (if, for, while)",
+            "Fonctions et modules",
+            "Structures de données (listes, dictionnaires, tuples)",
+            "Programmation orientée objet"
+          ]
+        },
+        {
+          subtitle: "Exercices Pratiques",
+          details: [
+            "Création d'une application de gestion de tâches",
+            "Manipulation de données avec les structures Python",
+            "Implémentation d'algorithmes simples"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Gestion de Version avec Git et GitHub",
+      duration: "1 semaine",
+      description: "Apprendre à utiliser Git pour le contrôle de version et collaborer sur GitHub.",
+      content: [
+        {
+          subtitle: "Introduction à Git",
+          details: [
+            "Initialisation de dépôts (git init)",
+            "Suivi des modifications (git add, git commit)",
+            "Branches et fusions (git branch, git merge)",
+            "Résolution des conflits"
+          ]
+        },
+        {
+          subtitle: "Collaboration avec GitHub",
+          details: [
+            "Création et gestion de dépôts distants",
+            "Pull requests et revue de code",
+            "Issues et gestion de projet",
+            "Bonnes pratiques de collaboration"
+          ]
+        },
+        {
+          subtitle: "Automatisation avec GitHub Actions",
+          details: [
+            "Configuration de workflows CI/CD",
+            "Automatisation des tests",
+            "Déploiement continu"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Analyse de Données avec Python",
+      duration: "2-3 semaines",
+      description: "Utilisation de bibliothèques scientifiques pour manipuler et visualiser les données.",
+      content: [
+        {
+          subtitle: "Manipulation Numérique avec Numpy",
+          details: [
+            "Création de tableaux",
+            "Opérations mathématiques",
+            "Manipulation de matrices"
+          ]
+        },
+        {
+          subtitle: "Visualisation avec Matplotlib et Seaborn",
+          details: [
+            "Graphiques simples et complexes",
+            "Corrélations et distributions"
+          ]
+        },
+        {
+          subtitle: "Projet Réel : Analyse Exploratoire des Données",
+          details: [
+            "Projet sur des données réelles pour explorer les tendances",
+            "Visualisation des corrélations et insights"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Machine Learning avec Scikit-learn",
+      duration: "4-6 semaines",
+      description: "Apprendre les concepts fondamentaux du Machine Learning et implémenter des modèles.",
+      content: [
+        {
+          subtitle: "Prétraitement des Données",
+          details: [
+            "Encodage des variables",
+            "Normalisation/Standardisation",
+            "Imputation des valeurs manquantes"
+          ]
+        },
+        {
+          subtitle: "Apprentissage Supervisé",
+          details: [
+            "Régression linéaire, régression Ridge/Lasso",
+            "KNN, SVM, Arbres de décision, Forêts aléatoires",
+            "Évaluation des modèles"
+          ]
+        },
+        {
+          subtitle: "Projet Réel : Prédiction avec Apprentissage Supervisé",
+          details: [
+            "Prédiction des prix immobiliers (Régression linéaire)",
+            "Classification de données médicales (KNN, SVM)"
+          ]
+        },
+        {
+          subtitle: "Apprentissage Non Supervisé",
+          details: [
+            "K-means clustering, Hierarchical clustering, DBSCAN ",
+            "Analyse en Composantes Principales (PCA), t-SNE ",
+            "Segmentation des groupes"
+          ]
+        },
+        {
+          subtitle: "Projet Réel : Segmentation avec Apprentissage Non Supervisé",
+          details: [
+            "Segmentation de clients avec K-means (e-commerce)",
+            "Analyse PCA de données financières"
+          ]
+        },
+        {
+          subtitle: "Validation Croisée et Tuning des Hyperparamètres",
+          details: [
+            "K-fold cross-validation, GridSearchCV, RandomizedSearchCV",
+            "Sauvegarde et Chargement des Modèles avec pickle et joblib"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Création d'API REST avec Flask",
+      duration: "2-3 semaines",
+      description: "Créer des API REST pour exposer des modèles de Machine Learning.",
+      content: [
+        {
+          subtitle: "Introduction à Flask",
+          details: [
+            "Création de routes, gestion des requêtes GET/POST",
+            "Gestion des erreurs"
+          ]
+        },
+        {
+          subtitle: "Création d'API pour les modèles ML",
+          details: [
+            "Exposer un modèle de machine learning via une API",
+            "Retourner des prédictions à partir des données utilisateurs"
+          ]
+        },
+        {
+          subtitle: "Utilisation des Projets ML Précédents",
+          details: [
+            "Exposer le modèle de régression/prédiction via Flask",
+            "Implémenter une API de segmentation client"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Déploiement sur Render",
+      duration: "1-2 semaines",
+      description: "Apprendre à déployer les modèles et les API sur des serveurs cloud.",
+      content: [
+        {
+          subtitle: "Déploiement avec Gunicorn et Heroku",
+          details: [
+            "Déployer Flask",
+            "Héberger l'API sur Render"
+          ]
+        },
+        {
+          subtitle: "Utilisation de Docker (Optionnel)",
+          details: [
+            "Conteneuriser l'application pour faciliter le déploiement",
+            "Création de Dockerfile"
+          ]
+        },
+        {
+          subtitle: "Déploiement des Projets Précédents",
+          details: [
+            "Déploiement des API créées dans l'étape précédente",
+            "Héberger les API sur le cloud"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Projet Final",
+      duration: "2-4 semaines",
+      description: "Appliquer tout ce qui a été appris pour développer une application complète.",
+      content: [
+        {
+          subtitle: "Développement d'une Application Complète",
+          details: [
+            "Préparation des données, modélisation, API Flask",
+            "Déploiement sur le cloud, création d'une interface utilisateur"
+          ]
+        }
+      ]
+    }
+  ];
+  
 
 const StepContent = ({ content }) => {
     const [openIndex, setOpenIndex] = useState(null);
